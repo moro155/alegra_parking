@@ -1,0 +1,17 @@
+-creamos los puestos vacios
+-si agregamos un carro le asignamos un puesto
+-para cargar los puestos disponibles
+se verifica cuales estan ocupados y se descartan
+para luego ir llenando los puestos disponibles.
+
+// Traducción del ejemplo del usuario Learner (publicado: Dec 1, 2016)
+// Post Original: "calculate the difference between 2 timestamps in php";
+// https://stackoverflow.com/questions/40905174/calculate-the-difference-between-2-timestamps-in-php
+
+$fecha1 = new DateTime('2016-11-30 03:55:06');//fecha inicial
+$fecha2 = new DateTime('2016-11-30 11:55:06');//fecha de cierre
+
+$intervalo = $fecha1->diff($fecha2);
+
+echo $intervalo->format('%Y años %m meses %d days %H horas %i minutos 
+%s segundos');//00 años 0 meses 0 días 08 horas 0 minutos 0 segundos
